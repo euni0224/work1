@@ -1,0 +1,721 @@
+.inner3{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sc-visual{
+    position: relative;
+    width: 770px;
+    background: #00f;
+    height: 350px;
+    
+}
+.sc-visual .group-slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 690px;
+    background: #0f0;
+    height: inherit;
+}
+.sc-visual .group-slide h3{
+    position: absolute;
+    width: 80px;
+    height: 50%;
+    background: #d2e1e9;
+    padding-top: 50px;
+    left: -80px;
+    text-align: center;
+    font-weight: 600;
+}
+.sc-visual .group-slide.slide1 h3{
+    top: 0;
+}
+.sc-visual .group-slide.slide2 h3{
+    top: 50%;
+    
+}
+/* 작동 */
+.sc-visual .group-slide .img-box{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-radius: 50%;
+    background: #fff url(../images/seoul-2.png) no-repeat 0 0;
+}
+.sc-visual .group-slide.slide2 .img-box{
+    background-position: -50px 0px;
+}
+.sc-visual .group-slide.active{
+    z-index: 10;
+}
+.sc-visual .group-slide.active h3{
+    background-color: #0158a8;
+    color: #fff;
+}
+.sc-visual .group-slide.active h3::after{
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    left: 99%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+    margin-top: -25px;
+}
+.sc-visual .group-slide .swiper{
+    position: relative;
+}
+.sc-visual .group-slide .swiper .text{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 122px;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+.sc-visual .control-area{
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    z-index: 3;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.sc-visual .control-area .fraction{
+    width: initial;
+}
+.sc-visual .control-area .fraction::after{
+    content: '';
+    display: inline-block;
+    background: #fff;
+    width: 1px;
+    height: 15px;
+    margin: 0 10px;
+    vertical-align: -2px;
+}
+
+
+.sc-visual .control-area .autoplay{
+    margin-top: 2px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/seoul-1.png) no-repeat -285px -285px;
+}
+.sc-visual .control-area .autoplay.active{
+    background: url(../images/seoul-1.png) no-repeat -269px -285px;
+}
+.sc-visual .control-area .btn-nav.prev{
+    margin-top: 3px;
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/seoul-1.png) no-repeat -241px -285px;
+}
+.sc-visual .control-area .btn-nav.next{
+    margin-top: 2px;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/seoul-1.png) no-repeat -256px -285px;
+}
+.inner3 .column-right{
+    width: 360px;
+}
+.sc-state{
+    position: relative;
+    width: 100%;
+    height: 98px;
+    margin-bottom: 7px;
+    background: url(../images/covid.jpg) no-repeat 0 0;
+    color: #fff;
+}
+.sc-state .date{
+    position: absolute;
+    top: -22px;
+    right: -18px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -0.05em;
+    height: 16px;
+    line-height: 16px;
+}
+.sc-state a{
+    position: absolute;
+    top: 36px;
+    left: 42px;
+    font-size: 13px;
+    display: flex;
+    gap: 35px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.075em;
+}
+.sc-state a div{
+    display: flex;
+    flex-direction: column;
+}
+.sc-state a em{
+    font-size: 17px;
+    margin-top: 2px;
+}
+.sc-banner{
+    width: 360px;
+    height: 109px;
+    background: url(../images/info-ad.jpg);
+}
+.sc-banner2{
+    position: relative;
+    height: 130px;
+    background: url(../images/info-ad2.jpg);
+    margin-top: 7px;
+}
+.sc-banner2 .link-direct{
+    z-index: 10;
+    bottom: 32px;
+    left: 138px;
+    position: absolute;
+    display: inline-block;
+    width: 97px;
+    height: 30px;
+    border-radius: 10%;
+}
+.sc-banner2 .link-direct:last-child{
+    width: 101px;
+    left: 245px;
+}
+.sc-service{
+    position: relative;
+    padding: 50px 0 0;
+}
+.sc-service h2{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sc-service .link-all{
+    width: 112px;
+    height: 29px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    padding-left: 13px;
+    line-height: 28px;
+    background: url(../images/next.png) no-repeat right 13px top 50%;
+}
+.sc-service .service-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.sc-service .service-item{
+    height: 90px;
+}
+.sc-service .service-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+.sc-service .service-item span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.sc-service .service-item .response{background-position: -360px 0;}
+.sc-service .service-item .job{background-position: -120px 0;}
+.sc-service .service-item .property{background-position: -300px 0;}
+.sc-service .service-item .study{background-position: -180px 0;}
+.sc-service .service-item .welfare{background-position: -960px 0;}
+.sc-service .service-item .dwelling{background-position: -780px 0;}
+.sc-service .service-item .ymeninformation{background-position: -1140px 0;}
+.sc-service .service-item .handsseoul{background-position: -1020px 0;}
+.sc-service .service-item .democracy{background-position: -60px 0;}
+.sc-service .service-item .citycouncil{background-position: -600px 0;}
+.sc-covid{
+    margin-top: 35px;
+    background: #eff4f8;
+}
+.sc-covid .covid-list{
+    display: flex;
+}
+.sc-covid .covid-item{
+    position: relative;
+    width: 288px;
+    padding: 20px 0;
+    
+}
+.sc-covid .covid-item+.covid-item::before{
+    content: '';
+    position: absolute;
+    margin: 20px -1px;
+    display: block;
+    top: 5px;
+    left: 0px;
+    width: 1px;
+    height: 60px;
+    background: #dbdbdb;
+}
+.inner4{
+    padding: 50px 0 50px;
+    border-bottom: 2px solid #222222;
+    display: flex;
+    justify-content: space-between;
+}
+.inner4 h2{
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding: 0 0 10px 5px;
+    font-weight: 700;
+    border-bottom: 2px solid #dbdbdb;
+}
+.inner4 .sc-often h2{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.inner4 .sc-board{
+    position: relative;
+    width: 360px;
+}
+.inner4 .sc-board h2::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 22px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: url(../images/seoul.png) no-repeat -1px -1px;
+}
+.inner4 .board-list{
+    margin-top: 5px;
+}
+.inner4 .board-item{
+    display: flex;
+    gap: 9px;
+    padding: 6px 0 6px 0;
+    width: inherit;
+    font-size: 15px;
+}
+.inner4 .board-item a{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.board-item .wel{color: #d76000;}
+.board-item .eco{color: #069363;}
+.board-item .adm{color: #337ee2;}/** 행정 색 없어짐*/
+.board-item .cul{color: #9b64d3;}
+.board-item .env{color: #599100;}
+.inner4 .sc-often{
+    width: 360px;
+}
+.inner4 .sc-often .service-list{
+    padding: 17px 5px 7px 20px;
+    background: #eff4f8;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner4 .sc-often .service-item{
+    float: left;
+    width: 50%;
+    position: relative;
+    padding: 0 0 10px 10px;
+}
+.inner4 .sc-often .service-item a{
+    display: block;
+    width: 94%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #333;
+}
+.inner4 .sc-often .service-item::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #666666;
+    width: 2px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+}
+.sc-info{
+    padding-top: 40px;
+}
+.sc-info h2{
+    padding: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sc-info .info-list{
+    padding: 0 27px;
+    margin-left: -59px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sc-info .info-item{
+    margin-left: 59px;
+
+}
+.sc-info .info-item span{
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin-bottom: 10px;
+}
+.sc-info .info-item .home{
+    background: url(../images/f1.png) no-repeat 0 0;
+}
+.sc-info .info-item .economy{
+    background: url(../images/f2.png) no-repeat 0 0;
+}
+.sc-info .info-item .traffic{
+    background: url(../images/f3.png) no-repeat 0 0;
+}
+.sc-info .info-item .environment{
+    background: url(../images/f4.png) no-repeat 0 0;
+}
+.sc-info .info-item .welfare{
+    background: url(../images/f5.png) no-repeat 0 0;
+}
+.sc-info .info-item .safety{
+    background: url(../images/f6.png) no-repeat 0 0;
+}
+.sc-info .info-item .culture{
+    background: url(../images/f7.png) no-repeat 0 0;
+}
+.sc-info .info-item .administration{
+    background: url(../images/f8.png) no-repeat 0 0;
+}
+.sc-news{
+    position: relative;
+    padding: 20px 0 30px;
+}
+.sc-news h2{
+    padding: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sc-news .link-all{
+    position: absolute;
+    display: block;
+    top: 26px;
+    right: 0;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+.sc-news .link-all::after{
+    content: '';
+    float: right;
+    margin: 2px 0 0 -60px;
+    width: 75px;
+    height: 19px;
+    right: 0;
+    top: 36px;
+    background: url(../images/seoul.png) no-repeat 0 -259px;
+}
+.sc-news .top-area{
+    display: flex;
+    justify-content: space-between;
+}
+.sc-news .news-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sc-news .news-item{
+    width: 273px;
+    position: relative;
+}
+.sc-news .news-item img{
+    width: 100%;
+    height: 188px;
+    margin-bottom: 15px;
+}
+.sc-news em{
+    position: absolute;
+    top: 156px;
+    width: 82px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+}
+.sc-news .news-item .imgfull{height: 248px;}
+.sc-news .wel{background-color: #d76000;}
+.sc-news .adm{background-color: #028ab6;}
+.sc-news .cul{background-color: #9b64d3;}
+.sc-news .env{background-color: #599100;}
+.sc-news .hou{background-color: #337ee2;}
+.sc-news .text{
+    font-size: 16px;
+    width: 100%;
+    height: 3em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+.inner5{
+    padding-bottom: 50px;
+    display: flex;
+    gap: 20px;
+
+}
+.inner5 h2{
+    padding-bottom: 11px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sc-video a{
+    width: 280px;
+    height: 152px;
+    position: relative;
+}
+.inner5 .sc-video .text{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    font-weight: 700;
+    padding: 11px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sc-snews{
+    width: 480px;
+}
+.sc-snews .snews-item{
+    padding: 8px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #555555;
+    display: flex;
+    gap: 22px;
+}
+.sc-snews .snews-item .text{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.sc-snews .snews-item .badge{
+    font-size: 16px;
+    font-weight: 400;
+    color: #09ac43;
+}
+.sc-sns{
+    position: relative;
+    width: 350px;
+    height: 195px;
+    background: url(../images/sns-bg.jpg) no-repeat 0 0;
+}
+.sc-sns .link-sns{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.sc-sns h2{
+    display: inline-block;
+    position: relative;
+    padding-right: 50px;
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+}
+.sc-sns h2::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    background: url(../images/sns.png) no-repeat -247px 0;
+    border-left: 1px solid #878787;
+    padding-right: 6px;
+}
+.sc-sns .sns-list{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 276px;
+    height: 40px;
+    margin-left: -138px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.sc-sns .sns-item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/sns.png) no-repeat 0 0;
+}
+.sc-sns .sns-item.facebook{background-position: -40px 0;}
+.sc-sns .sns-item.twitter{background-position: -80px 0;}
+.sc-sns .sns-item.blog{background-position: -120px 0;}
+.sc-sns .sns-item.youtube{background-position: -160px 0;}
+.sc-sns .sns-item.kakaostory{background-position: -200px 0;}
+
+.sc-banner3{
+    padding: 50px 0 50px 0;
+    border-top: 2px solid #222;
+}
+.sc-banner3 .control-area{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sc-banner3 .control-area .fraction{
+    width: initial;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.sc-banner3 .control-area button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+}
+
+.sc-banner3 .control-area .autoplay{
+    background: url(../images/seoul-1.png) no-repeat -65px -43px;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+}
+.sc-banner3 .control-area .autoplay.active{
+    background: url(../images/seoul-1.png) no-repeat -101px -43px;
+}
+.sc-banner3 .control-area .btn-nav.prev{
+    background: url(../images/seoul-1.png) no-repeat -45px -43px;
+
+}
+.sc-banner3 .control-area .btn-nav.next{
+    background: url(../images/seoul-1.png) no-repeat -86px -43px;
+
+}
+
+
+
+
+
+.sc-related{
+    position: relative;
+}
+.sc-related .related-list{
+    display: flex;
+    border: 1px solid #d0d0d0;
+    
+}
+.sc-related .related-item{
+    flex: 1;
+}
+
+.sc-related .related-item+.related-item{
+    border-left: 1px solid #d0d0d0;
+}
+.sc-related .related-item .btn-related{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 14px;
+
+}
+.sc-related .related-item .btn-related:not(.link)::after{
+    content: '';
+    margin-left: 7px;
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #373737;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(-135deg);
+    transition: all .3s;
+    transform-origin: center center;
+}
+.sc-related .related-item .btn-related.active::after{
+    transform: rotate(45deg);
+    vertical-align: 3px;
+}
+.sc-related .related-item .btn-related.active{
+    background: #e2e2e2;
+}
+.sc-related .sub-area{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+    display: none;
+    z-index: 2;
+    padding: 10px 20px 20px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+}
+
+
+
+.sc-related .sub-area .sub-list{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.sc-related .sub-area .sub-item{
+    width: 25%;
+}
+
+
+
+
+
+

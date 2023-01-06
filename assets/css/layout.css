@@ -1,0 +1,222 @@
+@import './reset.css';
+@import './common.css';
+
+.header .inner1{
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.header h1 a{
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url(../images/seoul.png) no-repeat -5px -165px;
+}
+.header .menu-list{
+    display: flex;
+    margin-left: 50px;
+}
+.header .menu-item{
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-left: 20px;
+    line-height: 48px;
+}
+.header .util-area{
+    display: flex;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-left: auto;
+}
+.header .util-area a{
+    padding: 0 10px;
+}
+.inner2{
+    position: relative;
+}
+.header .language-area{
+    display: flex;
+    width: 110px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: -35px;
+}
+.header .language-area select{
+    float: left;
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    box-sizing: border-box;
+    line-height: 21px;
+    background: url(../images/dw.png) no-repeat no-repeat 96% center;
+    background-size: 8px auto;
+    appearance: none;
+}
+.header .language-area button{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+    display: inline-block;
+}
+
+.header .slogun-area{
+    display: block;
+    margin: 38px 0 30px;
+    width: 133px;
+    height: 51px;
+    background: url(../images/seoul-head-bottom.png) no-repeat 0 0;
+}
+.header .search-area{
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -326px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.header .search-area input{
+    float: left;
+    width: calc(100% - 42px);
+    border: 0;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+}
+.header .search-area input::placeholder{
+    color: #1E6CB3;
+    font-size: 14px;
+}
+.header .search-area .btn-keyboard{
+    margin-left: 3px;
+    position: absolute;
+    top: 12px;
+    right: 42px;
+    background: url(../images/keyboard.png) no-repeat 0 0;
+    width: 36px;
+    height: 36px;
+}
+.header .search-area .btn-submit{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../images/seoul.png) no-repeat -32px -97px;
+    float: right;
+}
+.header .inner2 .weather-area{
+    right: 0;
+    top: -30px;
+    position: absolute;
+    width: 260px;
+    height: 85px;
+    margin-top: 34px;
+    display: flex;
+}
+.header .weather-area .text-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.header .weather-area .deg{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.header .weather-area .text-wrap .state{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+.header .weather-area .dust-box{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.header .weather-area .dust-box .state{
+    font-size: 13px;
+    margin: 0 5px;
+    color: #009944;
+}
+.footer{
+    padding: 15px 0;
+    font-size: 12px;
+    color: #636363;
+}
+.footer .inner6{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .policy-list{
+    display: flex;
+}
+.footer .policy-item{
+    display: flex;
+    align-items: center;
+}
+.footer .policy-item+.policy-item::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin: 0 10px;
+    background: #dcdcdc;
+}
+.footer .policy-item .em{font-weight: 700;color: #000;}
+.footer .sns-list{
+    display: flex;
+    gap: 12px;
+}
+.footer .sns-item{
+    background: url(../images/sns-2.png) no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+}
+.footer .sns-item.facebook{background-position: -25px 0;}
+.footer .sns-item.twitter{background-position: -50px 0;}
+.footer .sns-item.instagram{background-position: -75px 0;}
+.footer .sns-item.kakaostory{background-position: -100px 0;}
+.footer .sns-item.youtube{background-position: -125px 0;}
+.footer .sns-item.blog{background-position: -150px 0;}
+
+
+.footer .sns-item.facebook.active{background-position: -25px -25px;}
+.footer .sns-item.twitter.active{background-position: -50px -25px;}
+.footer .sns-item.instagram.active{background-position: -75px -25px;}
+.footer .sns-item.kakaostory.active{background-position: -100px -25px;}
+.footer .sns-item.youtube.active{background-position: -125px -25px;}
+.footer .sns-item.blog.active{background-position: -150px -25px;}
+.footer .qna-area{
+    margin-right: 40px;
+    width: 108px;
+    height: 45px;
+    background: url(../images/seoul.png) no-repeat -180px 0;
+}
+.footer .inner7{
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+    color: #636363;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .addr{
+    display: flex;
+}
+.footer .mark-area{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
